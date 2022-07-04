@@ -1,3 +1,4 @@
+/** @jsx jsx */
 import React, { useState, useRef } from "react";
 import { sendContactForm } from "../../services/index.js";
 import { jsx, Container, Box, Image, Textarea, Input, Button, Label, Form } from 'theme-ui';
@@ -25,7 +26,7 @@ const Contact = () => {
   return (
     <section sx={{ variant: 'section.Contact' }} id="Contact">
 
-      <Box  className="container max-w-2xl text-center padding-left:60px ">
+      <Box sx={styles.containerBox} >
         <Label>
           {"Contact Jean"}
         </Label>
@@ -38,23 +39,23 @@ const Contact = () => {
               &times;
             </span>
           </div>
-          <form sx={styles.form}
+          <form  sx={{px: 3, py: 4, mb:3}}
             ref={formRef}
             onSubmit={submitContact}
           >
-            <Input
+            <Input sx={{px: 3, py: 4, mb:3}}
               required
               placeholder="Name"
               type={"text"}
               minLength={3}
               maxLength={25}
             />
-            <Input
+            <Input sx={{px: 3, py: 4, mb:3}}
               required
               placeholder="Email Address"
               type={"email"}
             />
-            <Textarea sx={styles.form.textarea}
+            <Textarea sx={{px: 3, py: 4, mb:3}}
               required
               placeholder="Comment"
               rows={5}
@@ -105,8 +106,8 @@ const styles = {
           borderColor: 'primary',
           boxShadow: t => `0 0 0 2px ${t.colors.primary}`,
           outline: 'none',
-         
-          fontSize: 12,
+          
+          fontSize: 5,
         },
         button: {
           marginTop: 2,
@@ -121,6 +122,7 @@ const styles = {
         justifyContent: 'space-between',
         flexWrap: ['wrap', null, null, 'nowrap'],
         pb: [0, 7, 0, null, 7],
+        px: 3,
       },
     },
   }
