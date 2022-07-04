@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
+import { jsx, Container, Flex, Image, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
@@ -7,14 +7,14 @@ import  Logo1  from 'assets/pager.svg';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 import { useRouter } from 'next/router'
-
+import jeanlogo from 'assets/jeanlogo.png';
 export default function Header({ className }) {
   const router = useRouter()
   return (
     <header sx={styles.header} className={className} id="header">
       <Container sx={styles.container}>
         <Logo src={Logo1} />
-
+       <Image src={jeanlogo} />
          <Flex as="nav" sx={styles.nav}>
            {menuItems.map((menuItem, i) => (
              <Link

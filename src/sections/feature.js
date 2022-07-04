@@ -17,6 +17,13 @@ const data = [
     text:
       'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
   },
+  { 
+    id:2,
+    imgSrc: Partnership,
+    altText: 'Reliability',
+    title:'Reliability',
+    text: 'You can rely on Jean to offer quality representation'
+  },
 
   {
     id: 3,

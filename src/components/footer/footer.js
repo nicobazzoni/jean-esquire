@@ -2,7 +2,7 @@
 import { jsx, Box, Container, Image, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import FooterLogo from 'assets/cover.png';
 
 export default function Footer() {
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
           </nav>
         </Box>
         <Text sx={styles.footer.copyright}>
-          Copyright by { new Date().getFullYear()} Nicoroc
+          Web Developer { new Date().getFullYear()} Nico Bazzoni
         </Text>
       </Box>
     </Container>  

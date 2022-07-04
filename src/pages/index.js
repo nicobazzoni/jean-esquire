@@ -13,7 +13,7 @@ import WorkFlow from '../sections/workflow';
 import Package from '../sections/package';
 import TeamSection from '../sections/team-section';
 import TestimonialCard from '../sections/testimonial';
-import Form from '../sections/Form'
+import Contact from '../sections/Contact'
 
 export default function IndexPage() {
   return (
@@ -29,8 +29,8 @@ export default function IndexPage() {
          
           
           <TestimonialCard />
-          <Form/>
-          {/* <Form/> */}
+          <Contact/>
+        
         </Layout>
     </ThemeProvider>
   );

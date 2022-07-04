@@ -13,7 +13,7 @@ export default [
     label: 'Testimonial',
   },
   {
-    path: 'Form',
-    label: 'Inquiry',
+    path: 'Contact',
+    label: 'Contact',
   },
 ];
